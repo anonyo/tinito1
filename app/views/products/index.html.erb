@@ -1,0 +1,11 @@
+<div class="row">
+    <h2 class="text-center">Products</h2>
+  <div class="col-xs-3">
+    <% @products.each do |product| %>
+        <%= product.name %>
+        <%= product.description %>
+        <%= product.price %>
+        <%= link_to "Show", product_path(product) %>
+    <% end %>
+  </div>
+</div>
