@@ -6,8 +6,8 @@
     <h3><%= @product.name %></h3>
 
 
-  Description: <%= @product.description %>
+  <p>Description: <%= @product.description %></p>
 
 
-  $<%= @product.price %>
+  <strong>Member Price:</strong> <%= number_to_currency @product.price %>
 </div>
