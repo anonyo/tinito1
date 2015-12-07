@@ -6,7 +6,7 @@
             <%= image_tag product.image.url(:thumb) %>
         <% end %>
         <%= product.name %>
-        <%= product.description %>
+        <%= truncate(product.description, length: 100) %>
         <%= number_to_currency product.price %>
         <%= link_to "Show", product_path(product) %>
     <% end %>
