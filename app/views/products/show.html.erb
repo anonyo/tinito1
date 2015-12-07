@@ -1,11 +1,13 @@
-<h1>Showing selected product</h1>
+<div class="col-xs-6">
 
-<p>
-  Name: <%= @product.name %>
-</p>
-<p>
+    <%= image_tag @product.image.url(:medium) %>
+</div>
+<div class="col-xs-6">
+    <h3><%= @product.name %></h3>
+
+
   Description: <%= @product.description %>
-</p>
-<p>
+
+
   $<%= @product.price %>
-</p>
+</div>
