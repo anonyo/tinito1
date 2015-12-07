@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:edit, :show, :update, :destroy]
+  before_action :set_product, except: [:index, :new, :create]
+  before_action :require_admin_user, except: [:index, :show]
 
   def index
     @products = Product.all
@@ -47,5 +48,12 @@ class ProductsController < ApplicationController
 
   def set_product
     @product = Product.find(params[:id])
+  end
+
+  def require_admin_user
+    if !current_user.admin?
+      flash[:danger] = "Only admins can do perform action"
+      redirect_to root_path
+    end
   end
 end
