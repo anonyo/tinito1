@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :users, except: [:new]
   resources :products
+  resources :categories
   get "/signup" => "users#new"
   get "/login" => "sessions#new"
   post "login" => "sessions#create"

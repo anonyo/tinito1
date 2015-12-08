@@ -18,6 +18,15 @@
           <%= f.label :image %>
           <%= f.file_field :image %>
         </div>
-        <%= f.submit class: "btn btn-primary btn-lg" %>
+        <div class="form-group">
+          <div class="row">
+          <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+          <%= cb.label(class: "checkbox-inline input_checkbox") { cb.check_box(class: "checkbox") + cb.text } %>
+          <% end %>
+          </div>
+        </div>
+        <div class="actions">
+            <%= f.submit class: "btn btn-primary btn-lg" %>
+        </div>
     <% end %>
 </div>
