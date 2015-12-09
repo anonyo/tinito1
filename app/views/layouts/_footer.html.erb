@@ -1,17 +1,40 @@
 <footer>
-  <div class="col-xs-6">
-    <ul>
-      <li>About</li>
-      <li>Privacy</li>
-      <li>Contact Us</li>
-    </ul>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="footer-nav">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="social-icons">
+        <li>
+          <%= link_to "http://www.facebook.com" do %>
+              <i class="ion-social-facebook"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "https://twitter.com/tinito_sales" do %>
+              <i class="ion-social-twitter"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "http://www.googleplus.com" do %>
+              <i class="ion-social-googleplus"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "http://www.instagram.com" do %>
+              <i class="ion-social-instagram"></i>
+          <% end %>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="col-xs-6">
-    <ul>
-      <li>Social Icons</li>
-    </ul>
+  <div class="row">
+    <p>
+      Copyright &copy; tinito <%= Time.now.strftime("%Y") %>. All rights reserved.
+    </p>
   </div>
-  <p>
-    Copyright &copy; tinito <%= Time.now.strftime("%Y") %>. All rights reserved.
-  </p>
 </footer>
