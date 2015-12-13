@@ -103,6 +103,10 @@ h1 {
   letter-spacing: 1px;
 }
 
+h1.product {
+  color: #000;
+}
+
 h2 {
   font-size: 180%;
   word-spacing: 2px;
@@ -153,6 +157,10 @@ a:hover {
 
 .badge {
   background-color: linear-gradient(red, orange)!important;
+}
+
+.fa-envelope-o {
+  font-size: 120%;
 }
 
 // PARAGRAPHS
