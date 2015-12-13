@@ -73,7 +73,6 @@ body {
 
 .price {
   color: #85bb65;
-  font-weight: bold;
 }
 
 .plan-price {
@@ -145,6 +144,15 @@ a {
 
 a:hover {
   color: #e67e22;
+}
+
+.prod-title {
+  font-weight: bold;
+  color: #504c40;
+}
+
+.badge {
+  background-color: linear-gradient(red, orange)!important;
 }
 
 // PARAGRAPHS

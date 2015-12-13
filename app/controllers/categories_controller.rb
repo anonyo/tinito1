@@ -21,6 +21,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    @category_products = @category.products
   end
 
   def edit

@@ -15,3 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(".carouse").carousel({
+    interval: 2000
+});
