@@ -10,7 +10,7 @@
               <h3 class="text-center"><span class="prod-title"><%= product.name %></span></h3>
               <hr/>
               <p><%= truncate(product.description, length: 100) %></p>
-              <p><span class="price"><%= number_to_currency product.price %></span> &nbsp;<%= link_to "Purchase", "#", class: "btn btn-success" %></p>
+              <p><%= link_to "Purchase", "#", class: "btn btn-success" %>&nbsp;<span class="price"><%= number_to_currency product.price %></span></p>
             </div>
           </div>
         </div>

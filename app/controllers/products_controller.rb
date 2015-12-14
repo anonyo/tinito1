@@ -52,7 +52,7 @@ class ProductsController < ApplicationController
 
   def require_admin_user
     if !current_user.admin?
-      flash[:danger] = "Only admins can do perform action"
+      flash[:danger] = "Only admins can perform that action"
       redirect_to root_path
     end
   end

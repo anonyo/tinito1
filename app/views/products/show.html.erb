@@ -8,6 +8,9 @@
   <p><%= @product.description %></p>
 
 
-  <strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span>
+  <p><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span></p>
 </div>
-<%= link_to "Buy", "#", class: "btn btn-success btn-lg" %>
+<%= link_to "Purchase", "#", class: "btn btn-success btn-lg" %>
+<% if current_user.admin? %>
+    <%= link_to "Edit", edit_product_path(@product), class: "btn btn-primary btn-lg" %>
+<% end %>

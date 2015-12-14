@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, except: [:new, :create]
+  before_action :require_admin_user, except: [:show]
 
   def new
     @user = User.new
@@ -42,5 +43,12 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def require_admin_user
+    if !current_user.admin?
+      flash[:danger] = "Only that user can edit their own profile"
+      redirect_to root_path
+    end
   end
 end
