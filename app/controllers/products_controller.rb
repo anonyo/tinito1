@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   before_action :require_admin_user, except: [:index, :show]
 
   def index
-    @products = Product.all
+    @products = Product.all.limit(15)
   end
 
   def new
