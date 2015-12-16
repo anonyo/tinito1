@@ -21,6 +21,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    @category = Category.friendly.find(params[:id])
   end
 
   def edit
@@ -32,6 +33,14 @@ class CategoriesController < ApplicationController
       redirect_to products_path
     else
       render "edit"
+    end
+  end
+
+  def destroy
+    @category = Category.friendly.find(params[:id])
+    if @category.destroy
+      flash[:danger] = "#{@category.name} has been deleted!"
+      redirect_to root_path
     end
   end
 
