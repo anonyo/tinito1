@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, except: [:new, :create]
+  before_action :set_user, except: [:new, :create, :show]
   before_action :require_same_user, only: [:edit, :update, :destroy]
   before_action :require_admin, only: [:destroy]
 
@@ -19,6 +19,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.friendly.find(params[:id])
   end
 
   def edit

@@ -8,4 +8,6 @@ class User < ActiveRecord::Base
             format: { with: VALID_EMAIL_REGEX }
   has_secure_password
 
+  extend FriendlyId
+  friendly_id :name, use: :slugged
 end

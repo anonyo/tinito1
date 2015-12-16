@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, except: [:index, :new, :create]
+  before_action :set_product, except: [:index, :new, :create, :show]
   before_action :require_admin_user, except: [:index, :show]
 
   def index
@@ -21,6 +21,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.friendly.find(params[:id])
   end
 
   def edit

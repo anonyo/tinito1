@@ -12,6 +12,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 gem 'font-awesome-sass', '~> 4.4.0'
 gem 'ionicons-rails', '~> 2.0'
+gem 'friendly_id'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
