@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :require_admin, except: [:index, :show]
-  before_action :set_category, only: [:show, :edit, :update]
+  before_action :set_category, except: [:index, :create]
 
   def index
     @categories = Category.all
@@ -21,7 +21,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @category = Category.friendly.find(params[:id])
+    # @category = Category.friendly.find(params[:id])
   end
 
   def edit
@@ -37,7 +37,7 @@ class CategoriesController < ApplicationController
   end
 
   def destroy
-    @category = Category.friendly.find(params[:id])
+    # @category = Category.friendly.find(params[:id])
     if @category.destroy
       flash[:danger] = "#{@category.name} has been deleted!"
       redirect_to root_path
@@ -58,6 +58,6 @@ class CategoriesController < ApplicationController
   end
 
   def set_category
-    @category = Category.find(params[:id])
+    @category = Category.friendly.find(params[:id])
   end
 end

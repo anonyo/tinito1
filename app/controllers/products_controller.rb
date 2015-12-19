@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, except: [:index, :new, :create, :show, :destroy]
+  before_action :set_product, except: [:index, :new, :create]
   before_action :require_admin_user, except: [:index, :show]
 
   def index
@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.friendly.find(params[:id])
+
   end
 
   def edit
@@ -35,7 +35,7 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-    @product = Product.friendly.find(params[:id])
+
     if @product.destroy
       flash[:success] = "#{@product.name} was deleted!"
       redirect_to products_path
@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
   end
 
   def set_product
-    @product = Product.find(params[:id])
+    @product = Product.friendly.find(params[:id])
   end
 
   def require_admin_user
