@@ -82,4 +82,16 @@ Rails.application.configure do
   #     :s3_host_name => "tinito.s3-website-us-east-1.amazonaws.com",
   #     :bucket => "tinito"
   # }
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "gmail.com",
+      username: "erivas78@gmail.com",
+      password: "Kpariss2010",
+      authentication: "plain",
+      enable_starttls_auto: true
+  }
 end

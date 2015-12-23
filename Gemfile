@@ -14,6 +14,9 @@ gem 'font-awesome-sass', '~> 4.4.0'
 gem 'ionicons-rails', '~> 2.0'
 gem 'friendly_id'
 gem 'aws-sdk', '~> 2'
+gem 'mail_form'
+gem 'capybara'
+gem 'fog'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
@@ -24,6 +27,7 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'awesome_print'
 end
 
 group :production do
