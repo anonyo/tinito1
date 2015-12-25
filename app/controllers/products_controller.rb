@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   before_action :require_admin_user, except: [:index, :show]
 
   def index
-    @products = Product.all.limit(15)
+    @products = Product.all.limit(20)
   end
 
   def new
@@ -21,7 +21,6 @@ class ProductsController < ApplicationController
   end
 
   def show
-
   end
 
   def edit
@@ -45,7 +44,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:name, :description, :price, :image, category_ids: [])
+    params.require(:product).permit(:name, :description, :price, :image, :retail, category_ids: [])
   end
 
   def set_product

@@ -7,7 +7,7 @@
 
   <p><%= @product.description %></p>
 
-
+  <p><strong>Retail:</strong> <span class="crossed-price"><%= number_to_currency @product.retail %></span></p>
   <p><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span></p>
 </div>
 <%= link_to "Purchase", "#", class: "btn btn-success btn-lg" %>
