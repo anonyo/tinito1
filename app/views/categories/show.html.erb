@@ -1,4 +1,4 @@
-<h2 class="product text-center"><%= @category.name %></h2><small>(<%= pluralize @category.products.count, "product" %>)</small>
+<h2 class="text-center"><%= @category.name %></h2><small>(<%= pluralize @category.products.count, "product" %>)</small>
 <div align="center">
   <% if logged_in? && current_user.admin? %>
       <div class="row">
