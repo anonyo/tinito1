@@ -10,7 +10,7 @@
 <% if @category.products.size > 0 %>
     <ul>
       <% @category.products.each do |product| %>
-      <li> <%= link_to product_path(product.friendly_id) do  %>
+      <li class="prod-cat"> <%= link_to product_path(product.friendly_id) do  %>
             <%= image_tag product.image.url(:thumb) %></li>
         <% end %>
     </ul>
