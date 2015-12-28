@@ -4,7 +4,7 @@
 <div class="col-xs-6">
     <h4><%= @product.name %></h4>
     <div class="star-rating" data-score= <%= @avg_review %> ></div>
-    <em><%= "#{@reviews.length} reviews" %></em>
+    <em><%= pluralize(@reviews.count, "review") %></em>
 
   <p><%= @product.description %></p>
 
@@ -29,6 +29,7 @@
         <div class="review_title">
           <div class="star-rating" data-score="<%= review.rating %>"></div>
           <p><%= review.comment %></p>
+          <i>Reviewed about <%= time_ago_in_words(review.created_at) %> ago</i>
         </div>
      <% end %>
     <% end %>
