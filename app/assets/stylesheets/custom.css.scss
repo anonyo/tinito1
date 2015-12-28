@@ -199,13 +199,23 @@ a:hover {
   text-decoration: line-through;
 }
 
+.no-review {
+  margin-top: 40px;
+}
+
 .reviews {
   font-size: 20px;
   font-weight: bold;
+  margin-top: 40px;
 }
 
 .review_title {
   border-bottom: 1px solid #eaeaea;
+}
+
+.ago {
+  font-size: 12px;
+  color: #aeaeae;
 }
 
 // FOOTER //
