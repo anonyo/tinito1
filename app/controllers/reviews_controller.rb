@@ -5,7 +5,13 @@ class ReviewsController < ApplicationController
 
 
   def new
-    @review = Review.new
+    if current_user
+      @review = Review.where(user_id: current_user.id, product_id: params[:product_id]).first_or_initialize
+
+      if @review.id.present?
+        render "edit"
+      end
+    end
   end
 
   def create
@@ -14,7 +20,7 @@ class ReviewsController < ApplicationController
     @review.product_id = @product.id
     if @review.save
       flash[:success] = "Thank you for rating & reviewing this product."
-      redirect_to products_path
+      redirect_to product_path(@product)
     else
       render "new"
     end

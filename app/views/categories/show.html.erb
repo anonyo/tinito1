@@ -7,15 +7,19 @@
   <% end %>
 </div>
 
-<% if @category.products.size > 0 %>
-    <ul>
-      <% @category.products.each do |product| %>
-      <li class="prod-cat"> <%= link_to product_path(product.friendly_id) do  %>
-            <%= image_tag product.image.url(:thumb) %></li>
-        <% end %>
-    </ul>
-<% end %>
-
-<% else %>
-    <p>No category available</p>
-<% end %>
+<div class="row">
+  <div class="col-xs-12">
+    <% if @category.products.size > 0 %>
+        <ul>
+          <% @category.products.each do |product| %>
+          <li class="prod-cat"> <%= link_to product_path(product.friendly_id) do  %>
+                <h6><%= product.name %></h6>
+                <%= image_tag product.image.url(:thumb) %></li>
+            <% end %>
+        </ul>
+    <% end %>
+    <% else %>
+        <p class="text-center">No product available for this category</p>
+    <% end %>
+  </div>
+</div>
