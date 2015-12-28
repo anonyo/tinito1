@@ -23,7 +23,7 @@
         <h4>No reviews yet. Be the first!</h4>
         <%= link_to "Write a Review", new_product_review_path(@product), class: "btn btn-info btn-lg" %>
     <% else %>
-        <h4 class="reviews">Reviews</h4><em><span style="display: inline-block; font-size: 18px;">(<%= pluralize(@reviews.count, "Customer Review") %>)</span></em>
+        <h4 class="reviews">Reviews</h4>(<%= pluralize(@reviews.count, "Customer Review") %>)</em>
         <% @reviews.each do |review| %>
         <div class="review_title">
           <div class="star-rating" data-score="<%= review.rating %>"></div>
