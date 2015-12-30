@@ -41,7 +41,6 @@ class ProductsController < ApplicationController
   end
 
   def destroy
-
     if @product.destroy
       flash[:success] = "#{@product.name} was deleted!"
       redirect_to products_path

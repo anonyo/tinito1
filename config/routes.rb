@@ -12,5 +12,7 @@ Rails.application.routes.draw do
   get "/login" => "sessions#new"
   post "login" => "sessions#create"
   delete "/logout" => "sessions#destroy"
+  get "/how-it-works" => "pages#how_it_works"
+  get "/faq" => "pages#faq"
   root "pages#home"
 end

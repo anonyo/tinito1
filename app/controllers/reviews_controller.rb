@@ -7,10 +7,11 @@ class ReviewsController < ApplicationController
   def new
     if current_user
       @review = Review.where(user_id: current_user.id, product_id: params[:product_id]).first_or_initialize
-
-      if @review.id.present?
-        render "edit"
-      end
+      @review = Review.new(product_id: params[:id], user_id: User.find(session[:user_id]))
+      session[:return_to] = nil
+    else
+      session[:return_to] = request.url
+      redirect_to login_path, alert: "You need to login to write a review"
     end
   end
 
@@ -19,7 +20,7 @@ class ReviewsController < ApplicationController
     @review.user_id = current_user.id
     @review.product_id = @product.id
     if @review.save
-      flash[:success] = "Thank you for rating & reviewing this product."
+      flash[:success] = "Thank you for rating & reviewing #{@product.name}"
       redirect_to product_path(@product)
     else
       render "new"

@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+export STRIPE_TEST_SECRET_KEY=sk_test_34z54ejSATI8TbpvMOzWlFG2
+export STRIPE_TEST_PUBLISHABLE_KEY=pk_test_IIwoirf7NhZdEqmZHhVooxoE
