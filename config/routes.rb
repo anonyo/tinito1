@@ -14,5 +14,8 @@ Rails.application.routes.draw do
   delete "/logout" => "sessions#destroy"
   get "/how-it-works" => "pages#how_it_works"
   get "/faqs" => "pages#faqs"
+  get "/cart" => "cart#index"
+  get "/cart/clear" => "cart#clearCart"
+  get "/cart/:id" => "cart#add"
   root "pages#home"
 end
