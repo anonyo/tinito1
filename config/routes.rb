@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   post "login" => "sessions#create"
   delete "/logout" => "sessions#destroy"
   get "/how-it-works" => "pages#how_it_works"
-  get "/faq" => "pages#faq"
+  get "/faqs" => "pages#faqs"
   root "pages#home"
 end
