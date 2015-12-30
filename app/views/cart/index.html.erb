@@ -2,12 +2,10 @@
 <%= link_to "Empty Cart", cart_clear_path %>
 
 <ul>
-    <% @cart.each do |id, quantity| %>
-
-      <% product = Product.params[:id] %>
-
-        <li>
-          <%= link_to product.name, product %>
-        </li>
-    <% end %>
+  <% @cart.each do |id, qty| %>
+      <% product = Product.find_by_id(id) %>
+    <li>
+      <%= link_to product.name, product %>
+    </li>
+      <% end %>
 </ul>
