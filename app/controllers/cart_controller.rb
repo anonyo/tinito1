@@ -4,22 +4,16 @@ class CartController < ApplicationController
   def add
     product = Product.friendly.find(params[:id])
 
-    if session[:cart] then
-      cart = session[:cart]
+    session[:cart] ||= {}
+    product_id = product.id.to_s
+
+    if session[:cart][product_id]
+      session[:cart][product_id] += 1
     else
-      session[:cart] = {}
-      cart = session[:cart]
+      session[:cart][product_id] = 1
     end
 
-    if cart[product.id]
-      cart[product.id] = cart[product.id] + 1
-    else
-      cart[product.id] = 1
-      redirect_to cart_path
-    end
-
-
-
+    redirect_to cart_path
   end
 
   def clearCart
@@ -35,5 +29,4 @@ class CartController < ApplicationController
       @cart = {}
     end
   end
-
 end

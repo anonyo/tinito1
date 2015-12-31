@@ -11,10 +11,10 @@
   <% @cart.each do |id, qty| %>
       <% product = Product.find_by_id(id) %>
     <li>
-      <%= link_to product.name, product %>
+      <%= link_to image_tag(product.image.url(:thumb)), product %>
       <p>Quantity: <%= qty %></p>
     </li>
       <% total += qty * product.price %>
     <% end %>
-  <p><strong><%= number_to_currency total %></strong></p>
+  <p><strong>Total:</strong> <span class="price"><%= number_to_currency total %></span></p>
 </ul>
