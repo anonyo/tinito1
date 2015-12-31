@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   get "/faqs" => "pages#faqs"
   get "/cart" => "cart#index"
   get "/cart/clear" => "cart#clearCart"
-  get "/cart/:id" => "cart#add"
+  get "/cart/:id/" => "cart#add", as: :add_to_cart
   root "pages#home"
 end

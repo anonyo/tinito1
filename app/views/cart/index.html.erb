@@ -1,11 +1,20 @@
 <h2>Your Cart</h2>
-<%= link_to "Empty Cart", cart_clear_path %>
+<% if @cart.empty? %>
+    <h5>Your cart is currently empty</h5>
+<% else %>
+    <%= link_to "Empty Cart", cart_clear_path %>
+<% end %>
+
+<% total = 0 %>
 
 <ul>
   <% @cart.each do |id, qty| %>
       <% product = Product.find_by_id(id) %>
     <li>
       <%= link_to product.name, product %>
+      <p>Quantity: <%= qty %></p>
     </li>
-      <% end %>
+      <% total += qty * product.price %>
+    <% end %>
+  <p><strong><%= number_to_currency total %></strong></p>
 </ul>

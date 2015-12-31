@@ -10,7 +10,7 @@
           <h3 class="text-center"><span class="prod-title"><%= product.name %></span></h3>
           <hr/>
           <p><%= truncate(product.description, length: 100) %></p>
-          <p><%= link_to "Add to Cart", cart_path(id: product.id), class: "btn btn-success" %>&nbsp;<span class="price"><%= number_to_currency product.price %></span></p>
+          <p><%= link_to "Add to Cart", add_to_cart_path(product), class: "btn btn-success" %>&nbsp;<span class="price"><%= number_to_currency product.price %></span></p>
         </div>
       </div>
     </div>

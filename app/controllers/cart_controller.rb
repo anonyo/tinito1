@@ -1,7 +1,8 @@
 class CartController < ApplicationController
+  before_action :require_user
 
   def add
-    id = params[:id]
+    product = Product.friendly.find(params[:id])
 
     if session[:cart] then
       cart = session[:cart]
@@ -10,13 +11,15 @@ class CartController < ApplicationController
       cart = session[:cart]
     end
 
-    if cart[id]
-      cart[id] = cart[id] + 1
+    if cart[product.id]
+      cart[product.id] = cart[product.id] + 1
     else
-      cart[id] = 1
+      cart[product.id] = 1
+      redirect_to cart_path
     end
 
-    redirect_to cart_path
+
+
   end
 
   def clearCart
@@ -25,10 +28,12 @@ class CartController < ApplicationController
   end
 
   def index
-    if session[:cart] then
+
+    if session[:cart]
       @cart = session[:cart]
     else
       @cart = {}
     end
   end
+
 end
