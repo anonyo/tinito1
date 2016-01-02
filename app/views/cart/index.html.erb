@@ -10,9 +10,9 @@
 <ul>
   <% @cart.each do |id, qty| %>
       <% product = Product.find_by_id(id) %>
-    <li>
+    <li class="prod-cat">
       <%= link_to image_tag(product.image.url(:thumb)), product %>
-      <p>Quantity: <%= qty %></p>
+      <p>Quantity: <%= qty %></p> <%= link_to "Remove Product", cart_path(product), method: :delete, data: { confirm: "Are you sure you want to delete #{product.name}" } %>
     </li>
       <% total += qty * product.price %>
     <% end %>

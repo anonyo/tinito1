@@ -6,4 +6,5 @@ class CreateProducts < ActiveRecord::Migration
       t.decimal :price, precision: 12, scale: 2
     end
   end
+
 end
