@@ -16,6 +16,8 @@
     <%= link_to "Delete", product_path(@product), class: "btn btn-danger btn-lg",method: :delete, data: { confirm: "Are you sure?" } %>
 <% end %>
 
+<hr/>
+
 <div class="row">
   <div class="col-xs-12 no-review">
     <% if @reviews.blank? %>
