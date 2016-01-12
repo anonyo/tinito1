@@ -217,8 +217,11 @@ a:hover {
 
 .review_title {
   border-bottom: 1px solid #eaeaea;
+  margin-bottom: 2em;
+  .btn {
+    margin-bottom: 1em;
+  }
 }
-
 .ago {
   font-size: 12px;
   color: #aeaeae;
