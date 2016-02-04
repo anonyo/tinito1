@@ -27,7 +27,7 @@
   <div class="col-xs-12 no-review">
     <% if @reviews.blank? %>
         <h4>No reviews yet. Be the first!</h4>
-        <%= link_to new_product_review_path(@product), class: "btn btn-info btn-lg" do %>
+        <%= link_to new_product_review_path(@product), class: "button-review" do %>
             <i class="fa fa-pencil"></i>
             Write a Review
         <% end %>
@@ -46,7 +46,7 @@
           <% end %>
         </div>
      <% end %>
-            <%= link_to new_product_review_path(@product), class: "btn btn-info btn-lg" do %>
+            <%= link_to new_product_review_path(@product), class: "button-review" do %>
                 <i class="fa fa-pencil"></i>
                 Write a Review
             <% end %>

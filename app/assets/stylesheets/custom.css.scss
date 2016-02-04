@@ -12,6 +12,7 @@ $white: #fff;
 $border: #629632;
 $dark: #424652;
 $guaca: #A6D785;
+$lblue: #8bc6db;
 
 * {
   margin: 0;
@@ -206,6 +207,22 @@ a {
   &:hover {
     border: 2px solid $guaca;
     color: $guaca;
+    text-decoration: none;
+  }
+}
+
+.button-review {
+  outline: none;
+  background: transparent;
+  border: 2px solid $lblue;
+  text-align: center;
+  font-size: 1em;
+  color: $lblue;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  &:hover {
+    border: 2px solid darken($lblue, 10%);
+    color: darken($lblue, 10%);
     text-decoration: none;
   }
 }
