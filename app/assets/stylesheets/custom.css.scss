@@ -5,6 +5,14 @@
 @import 'ionicons';
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
+$orange: #e67e22;
+$price: #85bb65;
+$light: #eaeaea;
+$white: #fff;
+$border: #629632;
+$dark: #424652;
+$guaca: #A6D785;
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +21,7 @@
 
 html,
 body {
-  background: #fff;
+  background: $white;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
@@ -47,9 +55,9 @@ body {
 
 .logo {
   font-size: 125%;
-  color: #e67e22;
+  color: $orange;
   &:hover {
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -72,19 +80,19 @@ body {
 }
 
 .index-price {
-  color: #85bb65;
+  color: $price;
   margin-left: 15px;
 }
 
 .price {
-  color: #85bb65;
+  color: $price;
 }
 
 .plan-price {
   font-size: 200%;
   margin-bottom: 10px;
   font-weight: 100;
-  color: #85bb65;
+  color: $price;
 }
 .plan-price span {
   font-size: 80%;
@@ -102,7 +110,7 @@ h1, h2, h3 {
 h1 {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #fff;
+  color: $white;
   font-size: 240%;
   word-spacing: 4px;
   letter-spacing: 1px;
@@ -138,7 +146,7 @@ h5 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #e67e22;
+  background-color: $orange;
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -147,12 +155,18 @@ h2:after {
 
 // LINKS //
 
-a {
-  color: #e67e22;
+.thumbnail {
+  &:hover {
+    background: darken($white, 3%);
+    opacity: 0.7;
+  }
 }
 
-a:hover {
-  color: #e67e22;
+a {
+  color: $orange;
+  &:hover {
+    color: $orange;
+  }
 }
 
 .prod-title {
@@ -170,11 +184,30 @@ a:hover {
 }
 
 .btn-warning {
-  background-color: #e67e22;
+  background-color: $orange;
 }
 
 .prod-cat {
   list-style-type: none;
+}
+
+// BUTTONS
+
+.button {
+  outline: none;
+  background: transparent;
+  border: 2px solid $border;
+  text-align: center;
+  font-size: 1em;
+  color: $border;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  margin: 3rem 0 0 3rem;
+  &:hover {
+    border: 2px solid $guaca;
+    color: $guaca;
+    text-decoration: none;
+  }
 }
 
 // PARAGRAPHS
@@ -216,7 +249,7 @@ a:hover {
 }
 
 .review_title {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid $light;
   margin-bottom: 2em;
   .btn {
     margin-bottom: 1em;
@@ -224,14 +257,18 @@ a:hover {
 }
 .ago {
   font-size: 12px;
-  color: #aeaeae;
+  color: $light;
+}
+
+.member {
+  margin-bottom: 2rem;
 }
 
 // FOOTER //
 
 footer {
   width: 100%;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid $light;
   padding: 50px;
   font-size: 80%;
   margin-top: 30px;

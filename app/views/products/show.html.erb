@@ -10,12 +10,12 @@
     <h4><%= @product.name %></h4>
     <div class="star-rating" data-score= <%= @avg_review %> ></div>
 
-  <p><%= @product.description %></p>
+  <p class="description"><%= @product.description %></p>
 
   <p><strong>Retail:</strong> <span class="crossed-price"><%= number_to_currency @product.retail %></span></p>
-  <p><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span></p>
+  <p class="member"><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span></p>
 </div>
-<%= link_to "Add to Cart", add_to_cart_path(@product), class: "btn btn-success btn-lg" %>
+<%= link_to "Add to Cart", add_to_cart_path(@product), class: "button" %>
 <% if logged_in? && current_user.admin? %>
     <%= link_to "Edit", edit_product_path(@product), class: "btn btn-default btn-lg" %>
     <%= link_to "Delete", product_path(@product), class: "btn btn-danger btn-lg",method: :delete, data: { confirm: "Are you sure?" } %>
@@ -63,3 +63,4 @@
       }
   });
 </script>
+

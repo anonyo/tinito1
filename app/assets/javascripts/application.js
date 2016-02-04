@@ -19,3 +19,4 @@
 $(".carouse").carousel({
     interval: 2000
 });
+
