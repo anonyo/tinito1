@@ -13,7 +13,7 @@
   <p class="description"><%= @product.description %></p>
 
   <p><strong>Retail:</strong> <span class="crossed-price"><%= number_to_currency @product.retail %></span></p>
-  <p class="member"><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span></p>
+  <p class="member"><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span> <span class="saving">(<%= ((@product.retail - @product.price) * 100) / @product.price %>% savings)</span></p>
 </div>
 <%= link_to "Add to Cart", add_to_cart_path(@product), class: "button" %>
 <% if logged_in? && current_user.admin? %>
