@@ -13,7 +13,7 @@
   <p class="description"><%= @product.description %></p>
 
   <p><strong>Retail:</strong> <span class="crossed-price"><%= number_to_currency @product.retail %></span></p>
-  <p class="member"><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span> <span class="saving">(<%= ((@product.retail - @product.price) * 100) / @product.price %>% savings)</span></p>
+  <p class="member"><strong>Member Price:</strong> <span class="price"><%= number_to_currency @product.price %></span> <span class="saving">(<%= ((@product.retail - @product.price) * 100) / @product.retail %>% savings)</span></p>
 </div>
 <%= link_to "Add to Cart", add_to_cart_path(@product), class: "button" %>
 <% if logged_in? && current_user.admin? %>
@@ -24,7 +24,7 @@
 <hr/>
 
 <div class="row">
-  <div class="col-xs-12 no-review">
+  <div class="col-lg-12 col-md-12 col-xs-12 no-review">
     <% if @reviews.blank? %>
         <h4>No reviews yet. Be the first!</h4>
         <%= link_to new_product_review_path(@product), class: "button-review" do %>
@@ -32,7 +32,8 @@
             Write a Review
         <% end %>
     <% else %>
-        <h4 class="reviews">Reviews</h4>(<%= pluralize(@reviews.count, "Customer Review") %>)</em>
+        <h4 class="reviews">Reviews</h4> <span id="review">(<%= pluralize(@reviews.count, "Customer Review") %>)</span>
+        <hr/>
         <% @reviews.each do |review| %>
         <div class="review_title">
           <div class="star-rating" data-score="<%= review.rating %>"></div>

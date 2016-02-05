@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   before_action :require_admin_user, except: [:index, :show]
 
   def index
-    @products = Product.all.limit(25)
+    @products = Product.all.paginate(page: params[:page], per_page: 12)
   end
 
   def new
