@@ -203,6 +203,15 @@ a {
   list-style-type: none;
 }
 
+.user-info {
+  p {
+    padding: 0.5rem 2rem 0.5rem 0;
+  }
+  span {
+    margin-right: 0.6rem;
+  }
+}
+
 // BUTTONS
 
 .button {
@@ -234,6 +243,23 @@ a {
   &:hover {
     border: 2px solid darken($lblue, 10%);
     color: darken($lblue, 15%);
+    text-decoration: none;
+  }
+}
+
+.button-signup {
+  outline: none;
+  background: transparent;
+  border: 2px solid $orange;
+  text-align: center;
+  width: 6em;
+  font-size: 1em;
+  color: $orange;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  &:hover {
+    border: 2px solid lighten($orange, 15%);
+    color: lighten($orange, 15%);
     text-decoration: none;
   }
 }
