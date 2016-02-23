@@ -35,11 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6818182" vertical-offset="30" max-vertical-offset="810">
+            <state vertical-scroll-proportion="-19.375" vertical-offset="30" max-vertical-offset="810">
               <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1319648" vertical-offset="0" max-vertical-offset="682">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -89,11 +99,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20151206011938_create_products.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160104025158_change_price_type_in_products.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/_messages.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/reviews/_form.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/review.rb" />
         <option value="$PROJECT_DIR$/app/controllers/reviews_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/about/new.html.erb" />
@@ -116,6 +123,9 @@
         <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -347,6 +357,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinito" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinito" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinito" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tinito" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -359,7 +409,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="sche&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;cus&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/custom.css.scss&#10;rout&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/config/routes.rb&#10;s&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;gem&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;appl&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/application.css.scss&#10;ge&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;rev&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/review.rb&#10;&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/views/cart/index.html.erb&#10;sch&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;rou&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/config/routes.rb&#10;sc&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;us&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/user.rb&#10;use&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/user.rb&#10;cust&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/custom.css.scss&#10;cu&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/custom.css.scss&#10;prod&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/product.rb&#10;Ge&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;Gem&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;appli&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/views/layouts/application.html.erb" />
+    <property name="SearchEverywhereHistoryKey" value="ge&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;gem&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;sche&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;cus&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/custom.css.scss&#10;rout&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/config/routes.rb&#10;s&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;appl&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/application.css.scss&#10;rev&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/review.rb&#10;&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/views/cart/index.html.erb&#10;sch&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;rou&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/config/routes.rb&#10;sc&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/db/schema.rb&#10;us&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/user.rb&#10;use&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/user.rb&#10;cust&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/custom.css.scss&#10;cu&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/assets/stylesheets/custom.css.scss&#10;prod&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/models/product.rb&#10;Ge&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;Gem&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/Gemfile&#10;appli&#9;FILE&#9;file:///Users/erivas78/Documents/projects/tinito/app/views/layouts/application.html.erb" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: tinito">
@@ -609,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44617563" vertical-offset="0" max-vertical-offset="706">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="706">
@@ -623,25 +666,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reviews/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24087591" vertical-offset="0" max-vertical-offset="685">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3596615" vertical-offset="0" max-vertical-offset="709">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,10 +962,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3186969" vertical-offset="0" max-vertical-offset="706">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6818182" vertical-offset="30" max-vertical-offset="810">
+        <state vertical-scroll-proportion="-19.375" vertical-offset="30" max-vertical-offset="810">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29745042" vertical-offset="0" max-vertical-offset="706">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1319648" vertical-offset="0" max-vertical-offset="682">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
           <folding />
         </state>
       </provider>
