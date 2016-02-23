@@ -1,10 +1,9 @@
-<script language="JavaScript">
-  Stripe.setPublishableKey("<%= ENV["STRIPE_TEST_PUBLISHABLE_KEY"] %>");
-</script>
-
 <div class="row">
   <div class="col-xs-6 col-xs-offset-3">
-    <%= form_for @user, html: { role: "form", class: "cc_form" } do |f| %>
+    <%= form_for @user, html: { id: "tinito_form" } do |f| %>
+
+        <%= hidden_field_tag "plan", params[:plan] %>
+
         <div class="form-group">
           <%= f.label :name %>
           <%= f.text_field :name, class: "form-control input-lg", autofocus: true %>
@@ -39,7 +38,7 @@
           <%= select_year nil, { start_year: Date.today.year, end_year: Date.today.year+15 }, { name: nil, id: "card_year" } %>
         </div>
         <div class="actions">
-          <%= f.submit "Submit", class: "button-signup" %>
+          <%= f.submit "Submit", class: "button-signup", id: "form-submit-btn" %>
         </div>
     <% end %>
     <div class="col-xs-4 col-xs-offset-4">
