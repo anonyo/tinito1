@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   has_secure_password
   validates :password, length: { minimum: 8 }
   validates_presence_of :password_confirmation, message: "Passwords don't match."
+  attr_accessor :stripe_card_token
   has_many :reviews, dependent: :destroy
   has_one :payment
   belongs_to :plan
@@ -20,5 +21,13 @@ class User < ActiveRecord::Base
 
   def should_generate_new_friendly_id?
     name_changed?
+  end
+
+  def save_with_payment
+    if valid?
+      customer = Stripe::Customer.create(description: email, plan: plan_id, card: stripe_card_token)
+      self.stripe_customer_token = customer.id
+      save!
+    end
   end
 end

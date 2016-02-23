@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160223015703) do
+ActiveRecord::Schema.define(version: 20160223044914) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -85,9 +85,10 @@ ActiveRecord::Schema.define(version: 20160223015703) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
-    t.boolean  "admin",           default: false
+    t.boolean  "admin",                 default: false
     t.string   "slug"
     t.integer  "plan_id"
+    t.string   "stripe_customer_token"
   end
 
 end
