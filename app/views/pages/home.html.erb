@@ -9,7 +9,7 @@
       <h5>Pay <span class="plan-price">$39.95</span>/year and receive the best prices you can't find.</h5>
       <script src="https://checkout.stripe.com/checkout.js"></script>
 
-      <%= link_to signup_path, class: "btn btn-success btn-lg btn-block" do %>
+      <%= link_to signup_path(plan: @plan.id), class: "btn btn-success btn-lg btn-block" do %>
         <i class="fa fa-pencil-square-o"></i>
           Sign Up Today!
       <% end %>
