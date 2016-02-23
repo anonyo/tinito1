@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   post "login" => "sessions#create"
   delete "/logout" => "sessions#destroy"
   get "/how-it-works" => "pages#how_it_works"
-  get "/faqs" => "pages#faqs"
+  get "/faq" => "pages#faq"
   get "/cart" => "cart#index"
   get "/cart/clear" => "cart#clearCart"
   get "/cart/:id/" => "cart#add", as: :add_to_cart
