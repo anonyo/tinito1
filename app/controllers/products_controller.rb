@@ -22,7 +22,7 @@ class ProductsController < ApplicationController
 
   def show
     @reviews = Review.where(product_id: @product.id).order("created_at DESC")
-     # @category = Category.where(category: @category.name)
+    @category = Category.where(params[:id])
 
     if @reviews.blank?
       @avg_review = 0

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :products do
     resources :reviews, except: [:show, :index]
   end
+
   resources :categories
 
   match "/contact" => "about#new", via: "get", as: "contact_new"
