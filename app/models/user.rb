@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
   validates_presence_of :password_confirmation, message: "Passwords don't match."
   has_many :reviews, dependent: :destroy
   has_one :payment
+  belongs_to :plan
   accepts_nested_attributes_for :payment
 
   extend FriendlyId
