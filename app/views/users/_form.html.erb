@@ -2,7 +2,7 @@
   <div class="col-xs-6 col-xs-offset-3">
     <%= form_for @user, html: { id: "tinito_form" } do |f| %>
 
-        <%= hidden_field_tag "plan", params[:plan] %>
+        <%= hidden_field_tag :stripe_card_token %>
 
         <div class="form-group">
           <%= f.label :name %>
@@ -37,6 +37,13 @@
           <%= select_month nil, { add_month_numbers: true }, { name: nil, id: "card_month" } %>
           <%= select_year nil, { start_year: Date.today.year, end_year: Date.today.year+15 }, { name: nil, id: "card_year" } %>
         </div>
+
+        <!--<% if @user.stripe_card_token.present? %>-->
+            <!--Credit Card is on File-->
+        <!--<% else %>-->
+            <!---->
+        <!--<% end %>-->
+
         <div class="actions">
           <%= f.submit "Submit", class: "button-signup", id: "form-submit-btn" %>
         </div>
