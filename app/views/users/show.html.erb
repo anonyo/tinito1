@@ -1,15 +1,15 @@
 <h2 class="text-center"><%= "#{@user.name} " + "#{@user.last_name}" %></h2>
 
 <div class="user-info">
-    <p class="text-center">
-      Member Since: <%= @user.created_at.strftime("%B %d, %Y") %>
+    <p>
+      <strong><span></span>Member Since:</strong> <%= @user.created_at.strftime("%B %d, %Y") %>
     </p>
 
-    <p class="text-center">
+    <p>
       <strong><span class="fa fa-envelope-o"></span></strong> <%= @user.email %>
     </p>
 
-    <p class="text-center">
-        Purchases: 0
+    <p>
+        <strong>Purchases:</strong> 0
     </p>
 </div>
