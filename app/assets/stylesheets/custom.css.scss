@@ -5,6 +5,7 @@
 @import 'ionicons';
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
+
 $orange: #e67e22;
 $price: #85bb65;
 $light: #eaeaea;
@@ -77,6 +78,7 @@ body {
   small {
     font-size: 60%;
     color: #d3d3d3;
+
     &:hover {
       color: $white;
     }
@@ -141,6 +143,10 @@ body {
 .plan-price span {
   font-size: 80%;
   font-weight: 300;
+}
+
+.breadcrumb {
+    background: transparent;
 }
 
 // HEADINGS //
