@@ -76,7 +76,7 @@ body {
     color: $white;
   }
   small {
-    font-size: 60%;
+    font-size: 50%;
     &:hover {
       color: $white;
     }
@@ -147,6 +147,12 @@ body {
     background: transparent;
 }
 
+.refurbished {
+  font-size: 0.5rem;
+  background: $red;
+  color: $white;
+}
+
 // HEADINGS //
 
 
@@ -185,7 +191,7 @@ h4 {
   font-size: 100%;
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 h5 {
@@ -225,7 +231,7 @@ a {
 }
 
 .badge {
-  background-color: linear-gradient(red, orange)!important;
+  background: linear-gradient(#b20000, #990000)!important;
 }
 
 .fa-envelope-o {
@@ -307,6 +313,16 @@ a {
   }
 }
 
+.btn-success-ind {
+  border: 1px solid #4cae4c;
+  background-color: #fff;
+  color: #4cae4c;
+  &:hover {
+    background: #4cae4c;
+    color: #fff;
+  }
+}
+
 // PARAGRAPHS
 
 .long-copy {
@@ -368,8 +384,8 @@ span#review {
 }
 
 .ago {
-  font-size: 12px;
-  color: darken($light, 12%);
+  font-size: 0.6rem;
+  color: darken($light, 25%);
 }
 
 .member {
