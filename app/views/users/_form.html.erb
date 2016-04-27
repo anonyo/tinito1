@@ -38,11 +38,11 @@
           <%= select_year nil, { start_year: Date.today.year, end_year: Date.today.year+15 }, { name: nil, id: "card_year" } %>
         </div>
 
-        <!--<% if @user.stripe_card_token.present? %>-->
+        <% if @user.stripe_card_token.present? %>-->
             <!--Credit Card is on File-->
-        <!--<% else %>-->
-            <!---->
-        <!--<% end %>-->
+        <% else %>
+            
+        <% end %>
 
         <div class="actions">
           <%= f.submit "Submit", class: "button-signup", id: "form-submit-btn" %>

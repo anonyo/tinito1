@@ -2,7 +2,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import 'ionicons';
+@import "ionicons";
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
 
@@ -35,7 +35,7 @@ body {
 
 .clearfix { zoom: 1 }
 .clearfix:after {
-  content: ".";
+  content: "";
   clear: both;
   display: block;
   height: 0;
@@ -43,9 +43,9 @@ body {
 }
 
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('/assets/glyphicons-halflings-regular.eot');
-  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  font-family: "Glyphicons Halflings";
+  src: url("/assets/glyphicons-halflings-regular.eot");
+  src: url("/assets/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/assets/glyphicons-halflings-regular.woff") format("woff"), url("/assets/glyphicons-halflings-regular.ttf") format("truetype"), url("/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .wrapper {
@@ -100,7 +100,7 @@ body {
 }
 
 .badge {
-  background-color: #ff0000;
+  background-color: $red;
 }
 
 .dropdown, .dropdown-menu {
@@ -253,8 +253,9 @@ a {
   margin: 0 auto;
   padding: 10px 10px 0;
   p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     padding: 0.5rem 2rem 0.5rem 0;
+    text-transform: uppercase;
   }
   span {
     margin-right: 0.6rem;
