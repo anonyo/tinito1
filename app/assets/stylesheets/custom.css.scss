@@ -255,10 +255,12 @@ a {
   p {
     font-size: 0.9rem;
     padding: 0.5rem 2rem 0.5rem 0;
-    text-transform: uppercase;
+
   }
   span {
+    font-weight: normal;
     margin-right: 0.6rem;
+    text-transform: uppercase;
   }
 }
 

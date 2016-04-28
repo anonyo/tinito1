@@ -2,7 +2,7 @@
   <div class="col-xs-6 col-xs-offset-3">
     <%= form_for @user, html: { id: "tinito_form" } do |f| %>
 
-        <%= hidden_field_tag :stripe_card_token %>
+        <%= hidden_field_tag :stripe_customer_token %>
 
         <div class="form-group">
           <%= f.label :name %>
@@ -38,10 +38,10 @@
           <%= select_year nil, { start_year: Date.today.year, end_year: Date.today.year+15 }, { name: nil, id: "card_year" } %>
         </div>
 
-        <% if @user.stripe_card_token.present? %>-->
+        <% if @user.stripe_customer_token.present? %>
             <!--Credit Card is on File-->
         <% else %>
-            
+
         <% end %>
 
         <div class="actions">
