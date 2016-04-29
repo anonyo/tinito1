@@ -1,17 +1,21 @@
 <h2 class="text-center">Log in</h2>
 
 <div class="col-xs-6 col-xs-offset-3">
-    <%= form_for :session do |f| %>
-        <div class="form-group">
-          <%= f.label :email %>
-          <%= f.email_field :email, class: "form-control input-lg", autofocus: true %>
-        </div>
-      <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password, class: "form-control input-lg" %>
-      </div>
-      <div class="actions">
-        <%= f.submit "Log in", class: "btn btn-success btn-lg" %>
-      </div>
+    <%= form_for :session, html: { class: "form-1" } do |f| %>
+
+      <p class="field">
+        <%= f.email_field :email, placeholder: "Email"  %>
+        <i class="fa fa-user"></i>
+      </p>
+
+      <p class="field">
+        <%= f.password_field :password, placeholder: "Password" %>
+        <i class="fa fa-lock"></i>
+      </p>
+
+      <p class="submit">
+        <%= f.button :submit %>
+        <i class="fa fa-arrow-right"></i>
+      </p>
     <% end %>
 </div>

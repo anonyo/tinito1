@@ -10,7 +10,6 @@ class User < ActiveRecord::Base
   has_secure_password
   validates :password, length: { minimum: 8 }
   validates_presence_of :password_confirmation, message: "Passwords don't match."
-  attr_accessor :stripe_customer_token
   has_many :reviews, dependent: :destroy
   has_one :payment
   belongs_to :plan
