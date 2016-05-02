@@ -445,7 +445,8 @@ span#review {
     background: #494d54;
     border-color: lighten($orange, 15%);
     outline: none;
-    p:nth-child(3) {
+    p:nth-child(3),
+    p:nth-child(4) {
       float: left;
       width: 50%;
     }
