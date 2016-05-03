@@ -745,16 +745,16 @@
     scoreName    : asset_path('score'),
     single       : false,
     space        : true,
-    starHalf     : asset_path('star-half.png'),
-    starOff      : asset_path('star-off.png'),
-    starOn       : asset_path('star-on.png'),
-    starType     : asset_path('img'),
+    starHalf     : <%= asset_path('star-half.png') %>,
+    starOff      : <%= asset_path('star-off.png') %>,
+    starOn       : <%= asset_path('star-on.png') %>,
+    starType     : <%= asset_path('img') %>,
     target       : undefined,
-    targetFormat : asset_path('{score}'),
+    targetFormat : <%= asset_path('{score}') %>,
     targetKeep   : false,
     targetScore  : undefined,
-    targetText   : asset_path(''),
-    targetType   : asset_path('hint')
+    targetText   : <%= asset_path('') %>,
+    targetType   : <%= asset_path('hint') %>
   };
 
 })(jQuery);
