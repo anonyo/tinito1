@@ -722,11 +722,11 @@
 
   $.fn.raty.defaults = {
     cancel       : false,
-    cancelClass  : 'raty-cancel',
-    cancelHint   : 'Cancel this rating!',
-    cancelOff    : 'cancel-off.png',
-    cancelOn     : 'cancel-on.png',
-    cancelPlace  : 'left',
+    cancelClass  : asset_path('raty-cancel'),
+    cancelHint   : asset_path('Cancel this rating!'),
+    cancelOff    : asset_path('cancel-off.png'),
+    cancelOn     : asset_path('cancel-on.png'),
+    cancelPlace  : asset_path('left'),
     click        : undefined,
     half         : false,
     halfShow     : true,
@@ -742,19 +742,19 @@
     readOnly     : false,
     round        : { down: 0.25, full: 0.6, up: 0.76 },
     score        : undefined,
-    scoreName    : 'score',
+    scoreName    : asset_path('score'),
     single       : false,
     space        : true,
-    starHalf     : 'star-half.png',
-    starOff      : 'star-off.png',
-    starOn       : 'star-on.png',
-    starType     : 'img',
+    starHalf     : asset_path('star-half.png'),
+    starOff      : asset_path('star-off.png'),
+    starOn       : asset_path('star-on.png'),
+    starType     : asset_path('img'),
     target       : undefined,
-    targetFormat : '{score}',
+    targetFormat : asset_path('{score}'),
     targetKeep   : false,
     targetScore  : undefined,
-    targetText   : '',
-    targetType   : 'hint'
+    targetText   : asset_path(''),
+    targetType   : asset_path('hint')
   };
 
 })(jQuery);
