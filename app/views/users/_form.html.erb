@@ -3,7 +3,7 @@
     <%= form_for @user, html: { id: "tinito_form", class: "form" } do |f| %>
 
         <%= hidden_field_tag :stripe_customer_token %>
-        <%= hidden_field_tag "plan", params[:plan] %>
+        <%= hidden_field_tag :plan_id, value: params[:plan_id] %>
 
         <div class="form-group">
           <%= f.label :name %>
